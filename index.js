@@ -19,12 +19,10 @@ function keepGoing(array, changeValue, skipValue){
 }
 
 function findBy(array, findFn){
-  var found
   for (var i = 0; i < array.length; i++){
     if (array[i] === findFn()){
-      found = array[i]
-      break
+      return array[i]
     }
   }
-  return found
+  return null
 }
