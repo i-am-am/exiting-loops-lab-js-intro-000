@@ -1,5 +1,5 @@
 function breakOut(array, changeValue, stopValue){
-  for (i = 0; i < array.length; i++){
+  for (var i = 0; i < array.length; i++){
     if (array[i] === stopValue){
       break
     }
@@ -9,7 +9,7 @@ function breakOut(array, changeValue, stopValue){
 }
 
 function keepGoing(array, changeValue, skipValue){
-  for (i = 0; i < array.length; i++){
+  for (var i = 0; i < array.length; i++){
     if (array[i] === skipValue){
       continue
     }
@@ -20,7 +20,7 @@ function keepGoing(array, changeValue, skipValue){
 
 function findBy(array, findFn){
   var found
-  for (i = 0; i < array.length; i++){
+  for (var i = 0; i < array.length; i++){
     if (array[i] === findFn()){
       found = array[i]
     }
